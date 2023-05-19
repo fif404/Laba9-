@@ -1,0 +1,52 @@
+﻿<Window x:Class="Laba9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Polygon Fill="Yellow" Points="136,114,300,120,247,262,175,260"/>
+        <Polygon Fill="White" Points="136,114,300,120,290,145,144,142"/>
+        <Polygon Fill="Black" Points="219,262,201,262,201,354,216,354"/>
+        <Polyline Stroke="black" Points="136,114,300,120,247,262,175,260,173,259,136,114"/>
+        <Rectangle Stroke="Blue" Fill="Black" Margin="332,71,367,345">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="44.999999999999993"/>
+                    <RotateTransform Angle="132.355"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Stroke="Blue" Fill="Black" Margin="158,205,556,216">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="44.999999999999993"/>
+                    <RotateTransform Angle="-45.031"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Path Stroke="Black" Fill="Black" Margin="140,347,520,59" Stretch="Fill" RenderTransformOrigin="0.482,0.478">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="176.117"/>
+                    <TranslateTransform X="5.96" Y="1.747"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="True" StartPoint="10,10">
+                        <ArcSegment Point="250,50" Size="150,200" />
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+    </Grid>
+</Window>
